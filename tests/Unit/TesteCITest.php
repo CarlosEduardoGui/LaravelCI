@@ -31,4 +31,5 @@ class TesteCITest extends TestCase
         $lTesteCI = new TesteCIPrincipal("Carlos");
         $this->assertTrue($lTesteCI->ColocarIdade(20));
     }
+
 }
