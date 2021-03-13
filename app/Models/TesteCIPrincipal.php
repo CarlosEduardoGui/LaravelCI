@@ -8,6 +8,7 @@ use Symfony\Component\HttpFoundation\File\Exception\UploadException;
 class TesteCIPrincipal extends Model
 {
     private $Nome;
+    private $Idade;
 
     function __construct($pNome)
     {
