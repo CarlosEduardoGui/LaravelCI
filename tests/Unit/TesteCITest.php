@@ -12,24 +12,5 @@ class TesteCITest extends TestCase
      *
      * @return void
      */
-    public function test_trocarNome()
-    {
-        $lTesteCI = new TesteCIPrincipal("Carlos");
-        $lTesteCI->TrocarNome("Eduardo");
-        $this->assertEquals('Eduardo', $lTesteCI->getNome());
-    }
-
-    public function test_trocarNomeErrado()
-    {
-        $lTesteCI = new TesteCIPrincipal("Carlos");
-        $lTesteCI->TrocarNome("Eduardo");
-        $this->assertEquals('Eduardo', $lTesteCI->getNome());
-    }
-
-    public function test_colocarIdade()
-    {
-        $lTesteCI = new TesteCIPrincipal("Carlos");
-        $this->assertTrue($lTesteCI->ColocarIdade(20));
-    }
-
+    
 }
