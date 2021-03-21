@@ -15,7 +15,7 @@ class TesteCITest extends TestCase
     public function test_trocarNome()
     {
         $lTesteCI = new TesteCIPrincipal("Carlos");
-        $lTesteCI->TrocarNome(null);
+        $lTesteCI->TrocarNome("Eduardo");
         $this->assertEquals('Eduardo', $lTesteCI->getNome());
     }
 
@@ -23,7 +23,7 @@ class TesteCITest extends TestCase
     {
         $lTesteCI = new TesteCIPrincipal("Carlos");
         $lTesteCI->TrocarNome("Eduardo");
-        $this->assertEquals('Eduard', $lTesteCI->getNome());
+        $this->assertEquals('Eduardo', $lTesteCI->getNome());
     }
 
     public function test_colocarIdade()
