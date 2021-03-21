@@ -74,7 +74,7 @@ class TesteCIPrincipal extends Model
 
     private function ValidaNome($pNome)
     {
-        if($pNome == null || $pNome == "")
+        if($pNome == null || $pNome == "" || (string)$pNome == null)
         {
             return false;
         } 
