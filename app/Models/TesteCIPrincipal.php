@@ -8,6 +8,7 @@ use Symfony\Component\HttpFoundation\File\Exception\UploadException;
 class TesteCIPrincipal extends Model
 {
     private $Nome;
+    private $Idade;
 
     function __construct($pNome)
     {
@@ -73,7 +74,7 @@ class TesteCIPrincipal extends Model
 
     private function ValidaNome($pNome)
     {
-        if($pNome == null || $pNome == "")
+        if($pNome == null || $pNome == "" || (string)$pNome == null)
         {
             return false;
         } 
